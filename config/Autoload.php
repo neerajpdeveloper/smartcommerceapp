@@ -2,16 +2,18 @@
 
 spl_autoload_register(function ($class) {
 
+    $baseDir = __DIR__ . '/../';
+
     $paths = [
-        __DIR__ . '/',
-        __DIR__ . '/../models/',
-        __DIR__ . '/../controllers/',
-        __DIR__ . '/../services/',
+        'models/',
+        'controllers/',
+        'services/',
+        'core/',
     ];
 
     foreach ($paths as $path) {
 
-        $file = $path . $class . '.php';
+        $file = $baseDir . $path . $class . '.php';
 
         if (file_exists($file)) {
             require_once $file;
