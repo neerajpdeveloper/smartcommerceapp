@@ -1,6 +1,17 @@
 <?php
 
-function setting()
+if (!function_exists('setting'))
 {
-    return $GLOBALS['setting'];
+    function setting()
+    {
+        static $setting = null;
+
+        if ($setting === null)
+        {
+            $settingModel = new Setting();
+            $setting = $settingModel->get();
+        }
+
+        return $setting;
+    }
 }
