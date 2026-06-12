@@ -11,9 +11,9 @@ $id = $_GET['id'];
 
 $db = (new Config())->db();
 
-$stmt = $db->prepare("DELETE FROM brands WHERE id = ?");
+$stmt = $db->prepare("DELETE FROM coupons WHERE id = ?");
 $stmt->execute([$id]);
 
-$_SESSION['success'] = "Brands deleted successfully";
-    adminRedirect('brands');
+$_SESSION['success'] = "Coupons deleted successfully";
+    adminRedirect('coupons');
 exit;

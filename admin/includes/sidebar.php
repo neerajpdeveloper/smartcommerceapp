@@ -10,7 +10,7 @@ Dashboard
 </li>
 
 <li>
-<a href="#">
+<a href="<?=adminUrl()?>products/">
 <i class="fas fa-box"></i>
 Products
 </a>
@@ -26,6 +26,18 @@ Categories
 <a href="<?=adminUrl()?>brands/">
 <i class="fas fa-list"></i>
 Brands
+</a>
+</li>
+<li>
+<a href="<?=adminUrl()?>coupons/">
+<i class="fas fa-list"></i>
+Coupons
+</a>
+</li>
+<li>
+<a href="<?=adminUrl()?>currencies/">
+<i class="fas fa-list"></i>
+Currencies
 </a>
 </li>
 <li>

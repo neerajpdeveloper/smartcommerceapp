@@ -15,3 +15,10 @@ if (!function_exists('setting'))
         return $setting;
     }
 }
+
+function checkAuth(){
+    if(!isset($_SESSION['user_id'])){
+        header("Location:".setting()->site_url);
+        exit;
+    }
+}
