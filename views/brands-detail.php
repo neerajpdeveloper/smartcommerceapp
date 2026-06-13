@@ -1,5 +1,5 @@
 <h1 style="margin:20px 0;">
-    <?= $category->name ?>
+    <?= $brands->name ?>
 </h1>
 
 <style>
@@ -74,7 +74,7 @@
 
         <!-- BRAND -->
         <div class="brand">
-            <?= $p->brand_name ?? 'No Brand' ?>
+            <?= $p->cat_name ?? 'No Brand' ?>
         </div>
 
         <!-- PRODUCT NAME -->

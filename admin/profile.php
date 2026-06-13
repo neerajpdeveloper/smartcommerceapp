@@ -2,7 +2,6 @@
 
 $page_title = 'My Profile';
 include __DIR__.'/includes/admin-header.php';
-
 ?>
 
 <div class="content-wrapper py-4">

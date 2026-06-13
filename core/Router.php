@@ -24,7 +24,11 @@ class Router {
 
             case 'product':
                 $obj = new ProductController();
-                $obj->productBySlug($param);
+                if (!empty($param)) {
+                    $obj->productBySlug($param);
+                } else {
+                    $obj->index();
+                }
                 break;
 
             case 'category':
@@ -35,6 +39,45 @@ class Router {
                 } else {
                     $obj->index();
                 }
+                break;
+            case 'brands':
+                $obj = new BrandController();
+
+                if (!empty($param)) {
+                    $obj->detail($param);
+                } else {
+                    $obj->index();
+                }
+                break;
+
+            case 'currency':
+            $obj = new CurrencyController();
+            $obj->change();
+            break;
+
+            case 'login':
+            $obj = new AuthController();
+            $obj->loginForm();
+            break;
+
+            case 'login-post':
+                $obj = new AuthController();
+                $obj->login();
+                break;
+
+            case 'register':
+                $obj = new AuthController();
+                $obj->registerForm();
+                break;
+
+            case 'register-post':
+                $obj = new AuthController();
+                $obj->register();
+                break;
+
+            case 'logout':
+                $obj = new AuthController();
+                $obj->logout();
                 break;
 
             case 'cart':

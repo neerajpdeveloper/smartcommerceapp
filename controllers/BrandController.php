@@ -27,14 +27,14 @@ class BrandController extends Controller
     {
         $brands = $this->brand->getBySlug($slug);
 
-        if (!$category) {
+        if (!$brands) {
             echo "brands not found";
             return;
         }
 
         $data = [
-            'category' => $category,
-            'products' => $this->product->getByCategory($category->id)
+            'brands' => $brands,
+            'products' => $this->product->getByBrand($brands->id)
         ];
 
         return $this->view('brands-detail', $data);

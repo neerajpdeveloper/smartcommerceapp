@@ -20,16 +20,26 @@ class Product extends Base
     }
 
     // 📦 ALL PRODUCTS
-    public function getAll($limit = null)
-    {
-        $sql = "SELECT * FROM {$this->table} ORDER BY id DESC";
+public function getAll($limit = null)
+{
+    $sql = "
+        SELECT 
+            p.*,
+            c.name AS category_name,
+            c.slug AS category_slug,
+            b.name AS brand_name
+        FROM {$this->table} p
+        LEFT JOIN categories c ON c.id = p.category_id
+        LEFT JOIN brands b ON b.id = p.brand_id
+        ORDER BY p.id DESC
+    ";
 
-        if ($limit) {
-            $sql .= " LIMIT " . intval($limit);
-        }
-
-        return $this->fetchAll($sql);
+    if ($limit) {
+        $sql .= " LIMIT " . intval($limit);
     }
+
+    return $this->fetchAll($sql);
+}
 
     // 🎯 SINGLE PRODUCT
     public function getById($id)
@@ -98,6 +108,22 @@ public function getByBrand($brandId, $limit = null)
     $stmt->execute([$brandId]);
 
     return $stmt->fetchAll(PDO::FETCH_OBJ);
+}
+
+    public function getBySlug($slug)
+{
+    return $this->fetchOne("
+        SELECT 
+            p.*,
+            c.name AS category_name,
+            c.slug AS category_slug,
+            b.name AS brand_name
+        FROM {$this->table} p
+        LEFT JOIN categories c ON c.id = p.category_id
+        LEFT JOIN brands b ON b.id = p.brand_id
+        WHERE p.slug = ?
+        LIMIT 1
+    ", [$slug]);
 }
 
 }

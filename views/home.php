@@ -99,6 +99,19 @@
     <div class="container">
         <h2>My Shop</h2>
     </div>
+   <form method="POST" action="<?= siteUrl() ?>/currency/change">
+
+    <select name="code" onchange="this.form.submit()">
+<option value="">currency</option>
+        <?php foreach(currencies() as $c){ ?>
+            <option value="<?= $c->code ?>">
+                <?= $c->symbol ?> <?= $c->code ?>
+            </option>
+        <?php } ?>
+
+    </select>
+
+</form>
 </div>
 
 <div class="container">
@@ -114,6 +127,17 @@
         </div>
     <?php } ?>
 
+     <!-- CATEGORIES -->
+    <div class="title">Brands</div>
+
+    <?php foreach($brands as $brand){ ?>
+        <div class="category">
+            <a class="btn" href="<?=siteUrl()?>/brands/<?= $brand->slug ?>">
+                   <?= $brand->name ?>
+                </a>
+        </div>
+    <?php } ?>
+
     <!-- FEATURED -->
     <div class="title">Featured Products</div>
 
@@ -121,7 +145,7 @@
         <?php foreach($featured as $p){ ?>
             <div class="card">
                 <h3><?= $p->name ?></h3>
-                <div class="price">₹<?= $p->price ?></div>
+                <div class="price"><?= price($p->price) ?></div>
 
                 <a class="btn" href="/product/<?= $p->slug ?>">
                     View
@@ -137,7 +161,7 @@
         <?php foreach($new as $p){ ?>
             <div class="card">
                 <h3><?= $p->name ?></h3>
-                <div class="price">₹<?= $p->price ?></div>
+                <div class="price"><?= price($p->price) ?></div>
 
                 <a class="btn" href="/product/<?= $p->slug ?>">
                     View

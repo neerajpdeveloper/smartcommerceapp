@@ -8,30 +8,19 @@ class ProductController extends Controller
         $this->product = new Product();
     }
 
-    // HOME PAGE
-    public function home()
-    {
-        $data = [
-            'featured' => $this->product->getFeatured(),
-            'products' => $this->product->getAll()
-        ];
-
-        require 'views/home.php';
-    }
-
     // PRODUCT LIST
-    public function products()
+    public function index()
     {
         $data['products'] = $this->product->getAll();
 
-        require 'views/products.php';
+        return $this->view('products', $data);
     }
 
     // PRODUCT DETAIL
-    public function detail($id)
+    public function productBySlug($slug)
     {
-        $data['product'] = $this->product->getById($id);
+        $data['product'] = $this->product->getBySlug($slug);
 
-        require 'views/product-detail.php';
+        return $this->view('product-detail', $data);
     }
 }
