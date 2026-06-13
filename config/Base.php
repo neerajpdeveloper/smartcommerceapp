@@ -10,4 +10,18 @@ class Base extends Config
     {
         $this->db = parent::db();
     }
+
+    public function fetchAll($sql, $params = [])
+    {
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetchAll(PDO::FETCH_OBJ);
+    }
+
+    public function fetchOne($sql, $params = [])
+    {
+        $stmt = $this->db->prepare($sql);
+        $stmt->execute($params);
+        return $stmt->fetch(PDO::FETCH_OBJ);
+    }
 }

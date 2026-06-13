@@ -4,20 +4,6 @@ class Currency extends Base
 {
     protected $table = 'currencies';
 
-     private function fetchAll($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-    private function fetchOne($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-    }
-
     public function getAll()
     {
         return $this->fetchAll("

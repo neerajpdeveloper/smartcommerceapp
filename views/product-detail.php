@@ -48,7 +48,7 @@ function addToCart(productId){
 
     let qty = document.getElementById('qty').value;
 
-    fetch("<?= siteUrl() ?>/cart/add", {
+    fetch("<?= siteUrl() ?>/cart-add", {
         method: "POST",
         headers: {
             "Content-Type": "application/x-www-form-urlencoded"

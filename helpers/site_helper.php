@@ -26,3 +26,20 @@ function checkAuth(){
         exit;
     }
 }
+
+
+function cartCount()
+{
+    if (!isLoggedIn()) {
+        return 0;
+    }
+
+    static $cart = null;
+
+    if ($cart === null) {
+        $cart = new Cart();
+    }
+
+    return $cart->totalQty(user()['id']);
+}
+

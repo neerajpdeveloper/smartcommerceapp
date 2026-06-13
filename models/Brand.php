@@ -4,20 +4,6 @@ class Brand extends Base
 {
     protected $table = 'brands';
 
-    private function fetchAll($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-        private function fetchOne($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-    }
-
       public function getAll($limit = null)
     {
         $sql = "SELECT * FROM {$this->table} ORDER BY id DESC";

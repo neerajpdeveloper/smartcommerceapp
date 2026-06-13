@@ -1,5 +1,5 @@
 <?php
-class AuthController
+class AuthController extends Controller
 {
     protected $user;
 
@@ -19,6 +19,7 @@ class AuthController
     {
         $name = $_POST['name'];
         $email = $_POST['email'];
+        $mobile = $_POST['mobile'];
         $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
 
         $exists = $this->user->getByEmail($email);
@@ -31,16 +32,17 @@ class AuthController
         $this->user->create([
             'name' => $name,
             'email' => $email,
+            'mobile' => $mobile,
             'password' => $password
         ]);
 
-        header("Location: /login");
+        header("Location:".siteUrl()."/login");
     }
 
     // 🔐 LOGIN FORM
     public function loginForm()
     {
-        require __DIR__ . '/../views/auth/login.php';
+        return $this->view('login');
     }
 
     // 🔑 LOGIN PROCESS
@@ -62,7 +64,7 @@ class AuthController
             'email' => $user->email
         ];
 
-        header("Location: /home");
+        header("Location:".siteUrl());
     }
 
     // 🚪 LOGOUT
@@ -71,6 +73,6 @@ class AuthController
         unset($_SESSION['user']);
         session_destroy();
 
-        header("Location: /login");
+        header("Location:".siteUrl());
     }
 }

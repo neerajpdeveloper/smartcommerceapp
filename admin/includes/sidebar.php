@@ -70,6 +70,11 @@ Settings
 
 <ul class="submenu">
     <li>
+        <a href="<?=adminUrl()?>payment-gateway">
+            <i class="fas fa-user"></i> Payment Gateway
+        </a>
+    </li>
+    <li>
         <a href="<?=adminUrl()?>profile.php">
             <i class="fas fa-user"></i> Profile
         </a>

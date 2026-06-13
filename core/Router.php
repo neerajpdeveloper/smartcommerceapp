@@ -80,10 +80,82 @@ class Router {
                 $obj->logout();
                 break;
 
+            case 'user':
+
+                $obj = new UserController();
+
+                $action = $segments[1] ?? 'dashboard';
+
+                switch($action){
+
+                    case 'dashboard':
+                        $obj->dashboard();
+                    break;
+
+                    case 'addresses':
+                        $obj->addresses();
+                    break;
+
+                    case 'address-add':
+                        $obj->addAddress();
+                    break;
+
+                    case 'address-save':
+                        $obj->saveAddress();
+                    break;
+
+                    case 'address-edit':
+                        $obj->editAddress($segments[2]);
+                    break;
+
+                    case 'address-update':
+                        $obj->updateAddress($segments[2]);
+                    break;
+
+                    case 'address-delete':
+                        $obj->deleteAddress($segments[2]);
+                    break;
+
+                    case 'address-default':
+                        $obj->defaultAddress($segments[2]);
+                    break;
+
+                    default:
+                        $obj->dashboard();
+                }
+
+            break;
+
             case 'cart':
-                $obj = new CartController();
-                $obj->index();
+            $obj = new CartController();
+            $obj->index();
+            break;
+
+            case 'cart-add':
+                (new CartController())->add();
                 break;
+
+            case 'cart-update':
+
+            $obj = new CartController();
+            $obj->update();
+            break;
+
+            case 'cart-remove':
+
+            $obj = new CartController();
+
+            $id = $segments[1] ?? 0;
+
+            $obj->remove($id);
+
+            break;
+
+             case 'checkout':
+
+            $obj = new CheckoutController();
+            $obj->index();
+            break;
 
             default:
                 $obj = new HomeController();

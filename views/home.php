@@ -98,20 +98,47 @@
 <div class="header">
     <div class="container">
         <h2>My Shop</h2>
+
+        <!-- RIGHT SIDE -->
+        <div style="float:right; display:flex; gap:15px; align-items:center;    margin-top: -23px;">
+
+            <!-- CURRENCY -->
+            <form method="POST" action="<?= siteUrl() ?>/currency/change">
+                <select name="code" onchange="this.form.submit()">
+                    <option value="">Currency</option>
+
+                    <?php foreach(currencies() as $c){ ?>
+                        <option value="<?= $c->code ?>">
+                            <?= $c->symbol ?> <?= $c->code ?>
+                        </option>
+                    <?php } ?>
+
+                </select>
+            </form>
+
+            <!-- USER SECTION -->
+            <?php if(isLoggedIn()){ ?>
+
+                <div>
+                    👋 <?= user()['name'] ?>
+                </div>
+
+                <a href="<?= siteUrl() ?>/user/dashboard">Dashboard</a>
+
+                <a href="<?= siteUrl() ?>/logout">Logout</a>
+
+            <?php } else { ?>
+
+                <a href="<?= siteUrl() ?>/login">Login</a>
+                <a href="<?= siteUrl() ?>/register">Register</a>
+
+            <?php } ?>
+<a href="<?= siteUrl() ?>/cart">
+    Cart (<span id="cart-count"><?= cartCount() ?></span>)
+</a>
+        </div>
+
     </div>
-   <form method="POST" action="<?= siteUrl() ?>/currency/change">
-
-    <select name="code" onchange="this.form.submit()">
-<option value="">currency</option>
-        <?php foreach(currencies() as $c){ ?>
-            <option value="<?= $c->code ?>">
-                <?= $c->symbol ?> <?= $c->code ?>
-            </option>
-        <?php } ?>
-
-    </select>
-
-</form>
 </div>
 
 <div class="container">
@@ -147,7 +174,7 @@
                 <h3><?= $p->name ?></h3>
                 <div class="price"><?= price($p->price) ?></div>
 
-                <a class="btn" href="/product/<?= $p->slug ?>">
+                <a class="btn" href="<?= siteUrl() ?>/product/<?= $p->slug ?>">
                     View
                 </a>
             </div>
@@ -163,7 +190,7 @@
                 <h3><?= $p->name ?></h3>
                 <div class="price"><?= price($p->price) ?></div>
 
-                <a class="btn" href="/product/<?= $p->slug ?>">
+                <a class="btn" href="<?= siteUrl() ?>/product/<?= $p->slug ?>">
                     View
                 </a>
             </div>

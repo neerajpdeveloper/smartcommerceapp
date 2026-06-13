@@ -4,21 +4,6 @@ class Category extends Base
 {
     protected $table = 'categories';
 
-    // 🔥 REUSABLE CORE METHOD (IMPORTANT)
-    private function fetchAll($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetchAll(PDO::FETCH_OBJ);
-    }
-
-    private function fetchOne($sql, $params = [])
-    {
-        $stmt = $this->db->prepare($sql);
-        $stmt->execute($params);
-        return $stmt->fetch(PDO::FETCH_OBJ);
-    }
-
     // 📦 ALL CATEGORIES
     public function getAll($limit = null)
     {
