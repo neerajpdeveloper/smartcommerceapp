@@ -129,4 +129,14 @@ public function remove($cartId, $userId)
         $userId
     ]);
 }
+
+public function clear($userId)
+{
+    $stmt = $this->db->prepare("
+        DELETE FROM {$this->table}
+        WHERE user_id = ?
+    ");
+
+    return $stmt->execute([$userId]);
+}
 }

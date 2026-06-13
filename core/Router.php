@@ -157,6 +157,37 @@ class Router {
             $obj->index();
             break;
 
+            case 'place-order':
+
+            $obj = new CheckoutController();
+            $obj->placeOrder();
+            break;
+
+            case 'paypal-success':
+
+            $obj = new PaypalController();
+
+            $obj->success($param);
+
+            break;
+
+        case 'paypal-cancel':
+
+            $obj = new PaypalController();
+
+            $obj->cancel($param);
+
+            break;
+
+            case 'order-success':
+
+                $obj = new OrderController();
+                $obj->orderSuccess($param);
+
+                break;
+
+            break;
+
             default:
                 $obj = new HomeController();
                 $obj->index();

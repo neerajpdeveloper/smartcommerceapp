@@ -50,7 +50,7 @@ class CheckoutController extends Controller
 
     $cart = new Cart();
 
-    $cartItems = $cart->getItems(user()['id']);
+    $cartItems = $cart->getByUser(user()['id']);
 
     if (empty($cartItems)) {
 
@@ -69,41 +69,27 @@ class CheckoutController extends Controller
         $cartItems
     );
 
-    switch ($paymentMethod) {
+        try {
 
-        case 'cod':
+            $gateway =
+                PaymentFactory::make(
+                    $paymentMethod
+                );
 
-            $order->markPending($orderId);
+            $gateway->pay($orderId);
 
-            $cart->clear(user()['id']);
+        } catch (Exception $e) {
+
+            $_SESSION['error'] =
+                $e->getMessage();
 
             header(
                 "Location: "
                 .siteUrl()
-                ."/order-success/".$orderId
+                ."/checkout"
             );
-            exit;
-
-        case 'paypal':
-
-            (new PaypalService())
-                ->pay($orderId);
 
             exit;
-
-        case 'razorpay':
-
-            (new RazorpayService())
-                ->pay($orderId);
-
-            exit;
-
-        case 'stripe':
-
-            (new StripeService())
-                ->pay($orderId);
-
-            exit;
-    }
+        }
 }
 }
