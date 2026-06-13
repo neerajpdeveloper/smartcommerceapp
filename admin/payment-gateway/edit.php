@@ -135,6 +135,18 @@ if(!$gateway){
 
                 </div>
 
+               <div class="mb-3">
+
+                    <label class="form-label">
+                        API Url
+                    </label>
+                        <input type="text"
+                           name="api_url"
+                           class="form-control"
+                           value="<?= htmlspecialchars($gateway->api_url) ?>">
+
+                </div>
+
                 <div class="mb-3">
 
                     <label class="form-label">

@@ -1,3 +1,4 @@
+<?php flashMessage()?>
 <style>
 .checkout-page{
     max-width:1400px;
@@ -357,34 +358,6 @@ $gateways = $stmt->fetchAll(PDO::FETCH_OBJ);
 
 
         <?php } ?>
-                    <label class="payment-option">
-
-                <input type="radio"
-                       name="payment_method"
-                       value="cod"
-                       required>
-
-                <div class="payment-content">
-
-                    <div class="payment-icon">
-                        📦
-                    </div>
-
-                    <div>
-
-                        <div class="payment-name">
-                            Cash on Delivery
-                        </div>
-
-                        <div class="payment-desc">
-                            Pay When Product Arrives
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </label>
 
     </div>
 

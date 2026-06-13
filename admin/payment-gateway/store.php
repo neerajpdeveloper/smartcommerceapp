@@ -16,7 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 $name       = trim($_POST['name'] ?? '');
 $code       = trim($_POST['code'] ?? '');
-$mode       = trim($_POST['mode'] ?? 'sandbox');
+$mode       = trim($_POST['mode'] ?? 'test');
+$api_url    = trim($_POST['api_url'] ?? '');
 $client_id  = trim($_POST['client_id'] ?? '');
 $secret_key = trim($_POST['secret_key'] ?? '');
 $extra_key  = trim($_POST['extra_key'] ?? '');
@@ -70,6 +71,7 @@ $stmt = $db->prepare("
         name,
         code,
         mode,
+        api_url,
         client_id,
         secret_key,
         extra_key,
@@ -77,7 +79,7 @@ $stmt = $db->prepare("
     )
     VALUES
     (
-        ?,?,?,?,?,?,?
+        ?,?,?,?,?,?,?,?
     )
 ");
 
@@ -86,6 +88,7 @@ $stmt->execute([
     $name,
     strtolower($code),
     $mode,
+    $api_url,
     $client_id,
     $secret_key,
     $extra_key,

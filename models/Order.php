@@ -329,4 +329,52 @@ class Order extends Base
 
         return $stmt->fetchColumn();
     }
+
+public function getOrderWithItems($userId, $orderId)
+{
+    $query = "
+        SELECT 
+            o.id AS order_id,
+            o.user_id,
+            o.order_no,
+
+            o.currency_code,
+            o.currency_symbol,
+            o.currency_rate,
+
+            o.subtotal,
+            o.shipping_charge,
+            o.discount,
+            o.grand_total,
+
+            o.payment_method,
+            o.payment_status,
+            o.transaction_id,
+
+            o.order_status,
+            o.created_at,
+
+            oi.id AS item_id,
+            oi.product_id,
+            oi.product_name,
+            oi.sku,
+            oi.price,
+            oi.qty,
+            oi.total AS item_total
+
+        FROM orders o
+        INNER JOIN order_items oi ON o.id = oi.order_id
+        WHERE o.user_id = :user_id 
+        AND o.id = :order_id
+    ";
+
+    $stmt = $this->db->prepare($query);
+
+    $stmt->execute([
+        ':user_id' => $userId,
+        ':order_id' => $orderId
+    ]);
+
+    return $stmt->fetchAll(PDO::FETCH_ASSOC);
+}
 }

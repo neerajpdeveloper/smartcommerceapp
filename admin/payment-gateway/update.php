@@ -12,7 +12,8 @@ if (empty($_SESSION['admin_id'])) {
 $id = (int)($_POST['id'] ?? 0);
 
 $name       = trim($_POST['name'] ?? '');
-$mode       = trim($_POST['mode'] ?? 'sandbox');
+$mode       = trim($_POST['mode'] ?? 'Test');
+$api_url       = trim($_POST['api_url'] ?? '');
 $client_id  = trim($_POST['client_id'] ?? '');
 $secret_key = trim($_POST['secret_key'] ?? '');
 $extra_key  = trim($_POST['extra_key'] ?? '');
@@ -64,6 +65,7 @@ $stmt = $db->prepare("
 
         name        = ?,
         mode        = ?,
+        api_url        = ?,
         client_id   = ?,
         secret_key  = ?,
         extra_key   = ?,
@@ -76,6 +78,7 @@ $stmt->execute([
 
     $name,
     $mode,
+    $api_url,
     $client_id,
     $secret_key,
     $extra_key,

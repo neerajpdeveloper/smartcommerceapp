@@ -1,0 +1,1248 @@
+[2026-06-13 20:30:36] STRIPE_EXCEPTION : json_decode(): Argument #1 ($json) must be of type string, array given
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:41] STRIPE_RESPONSE : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_XxsdTc5x5ULelG","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:41] STRIPE_ERROR : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_XxsdTc5x5ULelG","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:41] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:51] STRIPE_RESPONSE : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_mN90LAVok2Rozz","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:51] STRIPE_ERROR : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_mN90LAVok2Rozz","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:33:51] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:36:21] STRIPE_RESPONSE : {"error":{"message":"Invalid request (check that your POST content type is application\/x-www-form-urlencoded). If you have any questions, we can help at https:\/\/support.stripe.com\/.","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:36:21] STRIPE_ERROR : {"error":{"message":"Invalid request (check that your POST content type is application\/x-www-form-urlencoded). If you have any questions, we can help at https:\/\/support.stripe.com\/.","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:36:21] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:38:11] STRIPE_EXCEPTION : json_decode(): Argument #1 ($json) must be of type string, array given
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:39:55] STRIPE_RESPONSE : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_RsytOW0WLPnOfw","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:39:55] STRIPE_ERROR : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"success_url. Did you mean success_url?","param":"\"success_url","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_RsytOW0WLPnOfw","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:39:55] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:47:51] STRIPE_RESPONSE : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameters: cancel, \"success. Did you mean cancel_url or success_url?","param":"cancel","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_IIbznu4QW8HKUm","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:47:51] STRIPE_ERROR : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameters: cancel, \"success. Did you mean cancel_url or success_url?","param":"cancel","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_IIbznu4QW8HKUm","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:47:51] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:49:48] RAZORPAY_RESPONSE : {"amount":179900,"amount_due":179900,"amount_paid":0,"attempts":0,"created_at":1781376588,"currency":"INR","entity":"order","id":"order_T1Dj1xYcAHIkMT","notes":[],"offer_id":null,"receipt":"ORD20260613204947537","status":"created"}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:50:04] STRIPE_RESPONSE : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"mode. Did you mean mode?","param":"\"mode","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_5l6B3xjA1hNXzp","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:50:04] STRIPE_ERROR : {"error":{"code":"parameter_unknown","doc_url":"https:\/\/stripe.com\/docs\/error-codes\/parameter-unknown","message":"Received unknown parameter: \"mode. Did you mean mode?","param":"\"mode","request_log_url":"https:\/\/dashboard.stripe.com\/acct_1ThpBUQ9RqQrBwnz\/test\/workbench\/logs?object=req_5l6B3xjA1hNXzp","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:50:04] STRIPE_EXCEPTION : Stripe session creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:53:23] STRIPE_RESPONSE : {"error":{"message":"Invalid request (check that your POST content type is application\/x-www-form-urlencoded). If you have any questions, we can help at https:\/\/support.stripe.com\/.","type":"invalid_request_error"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:53:23] STRIPE_EXCEPTION : Stripe session creation failed
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:56:23] PAYMENT_ERROR : Stripe session failed
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:59:24] PAYMENT_ERROR : Stripe session failed: Received unknown parameter: "success_url. Did you mean success_url?
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 20:59:33] PAYMENT_ERROR : Stripe session failed: Received unknown parameter: "success_url. Did you mean success_url?
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:00:22] PAYMENT_ERROR : Stripe session failed: Invalid request (check that your POST content type is application/x-www-form-urlencoded). If you have any questions, we can help at https://support.stripe.com/.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:02:32] RAZORPAY_RESPONSE : {"error":{"code":"BAD_REQUEST_ERROR","description":"invalid character '-' looking for beginning of value","metadata":[],"reason":"input_validation_failed","source":"business","step":"payment_initiation"}}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:02:32] RAZORPAY_EXCEPTION : Razorpay order creation failed.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:06:15] RAZORPAY_RESPONSE : {"amount":179900,"amount_due":179900,"amount_paid":0,"attempts":0,"created_at":1781377575,"currency":"INR","entity":"order","id":"order_T1E0OtJbj294wo","notes":[],"offer_id":null,"receipt":"ORD20260613210614452","status":"created"}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:06:26] EXCEPTION : http_build_query(): Argument #1 ($data) must be of type array, string given
+File : C:\xampp\htdocs\smartcommerceapp\services\PaymentGatewayService.php
+Line : 60
+--------------------------------------------------------------------------------
+[2026-06-13 21:06:29] EXCEPTION : http_build_query(): Argument #1 ($data) must be of type array, string given
+File : C:\xampp\htdocs\smartcommerceapp\services\PaymentGatewayService.php
+Line : 60
+--------------------------------------------------------------------------------
+[2026-06-13 21:10:21] PAYMENT_ERROR : Stripe session failed: The Checkout Session's total amount must convert to at least 50 cents. ₹17.99 converts to approximately $0.19.
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:12:47] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:14:26] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:00] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:18:02] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------
+[2026-06-13 21:20:30] ERROR : Undefined property: stdClass::$currency
+File : C:\xampp\htdocs\smartcommerceapp\views\account\orders.php
+Line : 56
+--------------------------------------------------------------------------------

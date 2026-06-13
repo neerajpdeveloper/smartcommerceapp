@@ -80,16 +80,13 @@ class CheckoutController extends Controller
 
         } catch (Exception $e) {
 
-            $_SESSION['error'] =
-                $e->getMessage();
+    ErrorHandler::log('PAYMENT_ERROR', $e->getMessage());
 
-            header(
-                "Location: "
-                .siteUrl()
-                ."/checkout"
-            );
+    $_SESSION['error'] = $e->getMessage();
 
-            exit;
-        }
+    header("Location: " . siteUrl() . "/checkout");
+
+    exit;
+}
 }
 }

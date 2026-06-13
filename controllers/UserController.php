@@ -3,6 +3,7 @@ class UserController extends Controller
 {
     protected $cart;
     protected $address;
+    protected $orders;
 
     public function __construct()
     {
@@ -14,6 +15,7 @@ class UserController extends Controller
 
         $this->cart = new Cart();
         $this->address = new CustomerAddress();
+        $this->orders = new Order();
     }
 
     public function dashboard()
@@ -21,6 +23,7 @@ class UserController extends Controller
         $data = [
 
             'user' => user(),
+            'totalOrders' => $this->orders->countByUser(user()['id']),
 
             'cartItems' => $this->cart
                 ->totalQty(user()['id']),
@@ -139,4 +142,34 @@ class UserController extends Controller
         );
         exit;
     }
+
+    public function order(){
+
+
+        $data = [
+
+            'order' => $this->orders->getByUser(user()['id']),
+            'totalOrders' => $this->orders->countByUser(user()['id']),
+
+        ];
+
+        return $this->view(
+            'account/orders',
+            $data
+        );
+    }
+
+   public function orderDetails($orderId)
+{
+    $userId = user()['id'];
+
+    $orderModel = new Order();
+    $orderService = new OrderService($orderModel);
+
+    $data = $orderService->getOrderDetail($userId, $orderId);
+
+    return $this->view('account/order-detail', [
+        'order' => $data
+    ]);
+}
 }

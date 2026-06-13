@@ -107,6 +107,20 @@ include '../includes/admin-header.php';
                 <div class="mb-3">
 
                     <label class="form-label">
+                        API Url
+                    </label>
+
+                    <textarea
+                        name="api_url"
+                        class="form-control"
+                        rows="4"
+                        placeholder="Enter API Url"></textarea>
+
+                </div>
+
+                <div class="mb-3">
+
+                    <label class="form-label">
                         Client ID / Publish Key
                     </label>
 

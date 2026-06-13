@@ -54,109 +54,89 @@ implements PaymentGatewayInterface
     |--------------------------------------------------------------------------
     */
 
-    public function pay($orderId)
-    {
-        $orderModel = new Order();
+public function pay($orderId)
+{
+    try {
 
-        $order =
-            $orderModel->getById($orderId);
+        $orderModel = new Order();
+        $order = $orderModel->getById($orderId);
+        $currency_code = strtoupper($order->currency_code);
+        $amount = $order->grand_total * $order->currency_rate;
 
         if (!$order) {
-
-            throw new Exception(
-                'Order not found.'
-            );
+            ErrorHandler::log('PAYPAL_ERROR', "Order not found: {$orderId}");
+            throw new Exception('Order not found.');
         }
 
-        $token =
-            $this->getAccessToken();
+        $token = $this->getAccessToken();
+
+        if (!$token) {
+            ErrorHandler::log('PAYPAL_ERROR', 'Access token missing');
+            throw new Exception('PayPal authentication failed.');
+        }
 
         $payload = [
-
             'intent' => 'CAPTURE',
-
             'purchase_units' => [[
-
-                'reference_id' =>
-                    $order->order_no,
-
+                'reference_id' => $order->order_no,
                 'amount' => [
-
-                    'currency_code' =>
-                        strtoupper(
-                            $order->currency_code
-                        ),
-
-                    'value' =>
-                        number_format(
-                            $order->grand_total,
-                            2,
-                            '.',
-                            ''
-                        )
+                    'currency_code' => $currency_code,
+                    'value' => number_format($amount, 2, '.', '')
                 ]
             ]],
-
             'application_context' => [
-
-                'return_url' =>
-                    siteUrl()
-                    . '/paypal-success/'
-                    . $orderId,
-
-                'cancel_url' =>
-                    siteUrl()
-                    . '/paypal-cancel/'
-                    . $orderId
+                'return_url' => siteUrl() . '/paypal-success/' . $orderId,
+                'cancel_url' => siteUrl() . '/paypal-cancel/' . $orderId
             ]
         ];
 
         $response = $this->curl(
-
-            $this->baseUrl()
-            . '/v2/checkout/orders',
-
+            $this->baseUrl() . '/v2/checkout/orders',
             'POST',
-
             [
-
                 'Content-Type: application/json',
-
-                'Authorization: Bearer '
-                . $token
-
+                'Authorization: Bearer ' . $token
             ],
-
             $payload
-
         );
 
-        if (!empty($response['links'])) {
+        // 🔥 DEBUG LOG (VERY IMPORTANT)
+        ErrorHandler::log('PAYPAL_RESPONSE', json_encode($response));
 
-            foreach (
-                $response['links']
-                as $link
-            ) {
+        // Validate response
+        if (!is_array($response)) {
+            ErrorHandler::log('PAYPAL_ERROR', 'Invalid API response');
+            throw new Exception('Invalid PayPal response.');
+        }
 
-                if (
-                    $link['rel']
-                    == 'approve'
-                ) {
+        if (empty($response['links'])) {
+            ErrorHandler::log('PAYPAL_ERROR', json_encode($response));
+            throw new Exception('PayPal Order Create Failed.');
+        }
 
-                    header(
-                        "Location: "
-                        . $link['href']
-                    );
-
-                    exit;
-                }
+        // Redirect to approve link
+        foreach ($response['links'] as $link) {
+            if (isset($link['rel']) && $link['rel'] === 'approve') {
+                header("Location: " . $link['href']);
+                exit;
             }
         }
 
-        throw new Exception(
-            'PayPal Order Create Failed'
-        );
+        ErrorHandler::log('PAYPAL_ERROR', 'Approve link missing: ' . json_encode($response));
+
+        throw new Exception('PayPal approval link not found.');
+
+    } catch (Throwable $e) {
+
+        ErrorHandler::log('PAYPAL_EXCEPTION', $e->getMessage());
+
+        // Optional: redirect or return error
+        $_SESSION['error'] = $e->getMessage();
+
+        header("Location: " . siteUrl() . "/checkout");
+        exit;
     }
+}
 
     /*
     |--------------------------------------------------------------------------

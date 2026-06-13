@@ -120,6 +120,14 @@ class Router {
                         $obj->defaultAddress($segments[2]);
                     break;
 
+                    case 'orders':
+                        $obj->order();
+                    break;
+
+                    case 'order-view':
+                        $obj->orderDetails($segments[2]);
+                    break;
+
                     default:
                         $obj->dashboard();
                 }
@@ -171,13 +179,54 @@ class Router {
 
             break;
 
-        case 'paypal-cancel':
+            case 'paypal-cancel':
 
             $obj = new PaypalController();
 
             $obj->cancel($param);
 
             break;
+
+            case 'razorpay-checkout':
+
+            $obj = new RazorpayController();
+
+            $obj->checkout($param);
+
+            break;
+
+            case 'razorpay-success':
+
+            $obj = new RazorpayController();
+
+            $obj->success($param);
+
+            break;
+
+            case 'razorpay-cancel':
+
+            $obj = new RazorpayController();
+
+            $obj->cancel($param);
+
+            break;
+
+            case 'stripe-success':
+
+            $obj = new StripeController();
+
+            $obj->success($param);
+
+            break;
+
+            case 'stripe-cancel':
+
+            $obj = new StripeController();
+
+            $obj->cancel($param);
+
+            break;
+
 
             case 'order-success':
 

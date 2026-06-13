@@ -4,25 +4,14 @@ class PaymentFactory
 {
     public static function make($gateway)
     {
-        switch($gateway){
+        $gateway = strtolower($gateway);
 
-            case 'paypal':
-                return new PaypalService();
-
-            case 'stripe':
-                return new StripeService();
-
-            case 'razorpay':
-                return new RazorpayService();
-
-            case 'cod':
-                return new CodService();
-
-            default:
-
-                throw new Exception(
-                    'Invalid Payment Gateway'
-                );
-        }
+        return match ($gateway) {
+            'paypal'   => new PaypalService(),
+            'stripe'   => new StripeService(),
+            'razorpay' => new RazorpayService(),
+            'cod'      => new CodService(),
+            default     => throw new \Exception('Invalid Payment Gateway')
+        };
     }
 }
