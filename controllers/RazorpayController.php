@@ -13,7 +13,7 @@ class RazorpayController extends Controller
             $gatewayModel = new Payment();
             $gateway = $gatewayModel->getGateway('razorpay');
 
-        return $this->view('razorpay/checkout', [
+        return $this->view('payments/checkout', [
             'orderId' => $orderId,
             'data' => $data,
             'gateway' => $gateway

@@ -10,6 +10,8 @@ class PaymentFactory
             'paypal'   => new PaypalService(),
             'stripe'   => new StripeService(),
             'razorpay' => new RazorpayService(),
+            'payu'     => new PayuService(),
+            'ccavenue' => new CCAvenueService(),
             'cod'      => new CodService(),
             default     => throw new \Exception('Invalid Payment Gateway')
         };

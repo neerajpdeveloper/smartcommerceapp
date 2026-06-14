@@ -227,6 +227,38 @@ class Router {
 
             break;
 
+            case 'payu-success':
+
+            $obj = new PayuController();
+
+            $obj->success($param);
+
+            break;
+
+            case 'payu-failure':
+
+            $obj = new PayuController();
+
+            $obj->failure($param);
+
+            break;
+
+            case 'ccavenue-success':
+
+            $obj = new CCAvenueController();
+
+            $obj->success($param);
+
+            break;
+
+            case 'ccavenue-cancel':
+
+            $obj = new CCAvenueController();
+
+            $obj->cancel($param);
+
+            break;
+
 
             case 'order-success':
 

@@ -33,6 +33,16 @@ abstract class PaymentGatewayService
             case 'stripe':
                 return 'https://api.stripe.com';
 
+            case 'payu':
+                return $this->gateway->mode == 'live'
+                    ? 'https://secure.payu.in/_payment'
+                    : 'https://test.payu.in/_payment';
+
+             case 'ccavenue':
+                return $this->gateway->mode == 'live'
+            ? 'https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction'
+            : 'https://test.ccavenue.com/transaction/transaction.do?command=initiateTransaction';
+
             default:
                 throw new Exception("Unsupported gateway");
         }

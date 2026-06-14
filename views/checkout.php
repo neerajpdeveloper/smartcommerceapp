@@ -280,7 +280,7 @@ $stmt = $db->query("
     SELECT *
     FROM payment_gateways
     WHERE status = 1
-    ORDER BY id ASC
+    ORDER BY orderby ASC
 ");
 
 $gateways = $stmt->fetchAll(PDO::FETCH_OBJ);
