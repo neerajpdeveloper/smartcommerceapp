@@ -22,6 +22,8 @@ function createSlug($string)
     return $slug;
 }
 
+
+
 function adminflashMessage()
 {
     if (!empty($_SESSION['error'])) {

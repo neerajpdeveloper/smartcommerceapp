@@ -69,6 +69,25 @@ Settings
 </a>
 
 <ul class="submenu">
+
+<li>
+    <a href="<?=adminUrl('api_clients')?>">
+        API Clients
+    </a>
+</li>
+
+<li>
+    <a href="<?=adminUrl('api_permissions')?>">
+        API Permissions
+    </a>
+</li>
+
+
+<li>
+    <a href="<?=adminUrl('api_logs')?>">
+        API Logs
+    </a>
+</li>
     <li>
         <a href="<?=adminUrl()?>payment-gateway">
             <i class="fas fa-user"></i> Payment Gateway
