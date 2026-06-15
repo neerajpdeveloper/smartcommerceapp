@@ -70,8 +70,7 @@ implements PaymentGatewayInterface
                     $this->gateway->secret_key
                 );
 
-            include APP_PATH .
-                '/views/payments/ccavenue.php';
+            include dirname(__DIR__) .'/views/payments/ccavenue.php';
 
         } catch (Throwable $e) {
 

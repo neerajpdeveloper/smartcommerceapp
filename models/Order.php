@@ -377,4 +377,47 @@ public function getOrderWithItems($userId, $orderId)
 
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
+
+public function getOrderWithUser($orderId)
+{
+    // SQL query ko readable aur maintainable rakhne ke liye heredoc ya clean string use karein
+    $sql = "
+        SELECT
+            o.*,
+            
+            -- Customer details
+            u.id AS customer_id,
+            u.name AS customer_name,
+            u.email AS customer_email,
+            u.mobile AS customer_mobile,
+            u.status AS customer_status,
+            u.avatar,
+
+            -- Delivery Address details
+            a.id AS address_id,
+            a.full_name AS shipping_name,
+            a.mobile AS shipping_mobile,
+            a.address_line,
+            a.city,
+            a.state,
+            a.pincode
+
+        FROM orders o
+
+        LEFT JOIN customers u 
+            ON o.user_id = u.id
+
+        LEFT JOIN customer_addresses a 
+            ON o.address_id = a.id
+
+        WHERE o.id = ?
+        LIMIT 1
+    ";
+
+    $stmt = $this->db->prepare($sql);
+    $stmt->execute([$orderId]);
+
+    // Agar data milta hai toh object return karega, nahi toh false
+    return $stmt->fetch(PDO::FETCH_OBJ);
+}
 }

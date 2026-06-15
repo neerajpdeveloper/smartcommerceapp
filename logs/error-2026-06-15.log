@@ -1,0 +1,40 @@
+[2026-06-15 20:50:31] RAZORPAY_RESPONSE : {"amount":799800,"amount_due":799800,"amount_paid":0,"attempts":0,"created_at":1781549432,"currency":"INR","entity":"order","id":"order_T20o2aDWdcxbVT","notes":[],"offer_id":null,"receipt":"ORD20260615205031618","status":"created"}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 20:52:31] EXCEPTION : SQLSTATE[42S02]: Base table or view not found: 1146 Table 'smartcommerceapp.users' doesn't exist
+File : C:\xampp\htdocs\smartcommerceapp\models\Order.php
+Line : 410
+--------------------------------------------------------------------------------
+[2026-06-15 20:57:22] ERROR : Array to string conversion
+File : C:\xampp\htdocs\smartcommerceapp\core\ErrorHandler.php
+Line : 57
+--------------------------------------------------------------------------------
+[2026-06-15 20:57:22] ORDER_EMAIL_ERROR : Undefined constant "APP_PATH"
+File : Array
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 21:02:01] RAZORPAY_RESPONSE : {"amount":399900,"amount_due":399900,"amount_paid":0,"attempts":0,"created_at":1781550122,"currency":"INR","entity":"order","id":"order_T210BYPmhIqI4l","notes":[],"offer_id":null,"receipt":"ORD20260615210201864","status":"created"}
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 21:02:50] ERROR : Array to string conversion
+File : C:\xampp\htdocs\smartcommerceapp\core\ErrorHandler.php
+Line : 57
+--------------------------------------------------------------------------------
+[2026-06-15 21:02:50] ORDER_EMAIL_ERROR : Email template file not found at: C:\xampp\htdocs\smartcommerceapp/view/emails/order-confirmation.php in C:\xampp\htdocs\smartcommerceapp\services\TemplateService.php on line 20
+File : Array
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 21:04:21] MAIL_ERROR : Class "PHPMailer\PHPMailer\PHPMailer" not found
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 21:04:24] MAIL_ERROR : Class "PHPMailer\PHPMailer\PHPMailer" not found
+File : 
+Line : 
+--------------------------------------------------------------------------------
+[2026-06-15 21:07:52] CCAVENUE_EXCEPTION : Undefined constant "APP_PATH"
+File : 
+Line : 
+--------------------------------------------------------------------------------
