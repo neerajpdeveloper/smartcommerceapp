@@ -133,6 +133,25 @@ class Router {
                 }
 
             break;
+            case 'google-login':
+            $obj = new AuthController();
+            $obj->googleLogin();
+            break;
+             
+            case 'google-callback':
+            $obj = new AuthController();
+            $obj->googleCallback();
+            break;
+
+            case 'facebook-login':
+            $obj = new AuthController();
+            $obj->facebookLogin();
+            break;
+             
+            case 'facebook-callback':
+            $obj = new AuthController();
+            $obj->facebookCallback();
+            break;
 
             case 'cart':
             $obj = new CartController();
