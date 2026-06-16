@@ -111,4 +111,43 @@ public function getByBrand($brandId, $limit = null)
     ", [$slug]);
 }
 
+public function create(array $data)
+{
+    $sql = "INSERT INTO products
+    (
+        name,
+        slug,
+        category_id,
+        brand_id,
+        price,
+        stock,
+        description,
+        created_at
+    )
+    VALUES
+    (
+        :name,
+        :slug,
+        :category_id,
+        :brand_id,
+        :price,
+        :stock,
+        :description,
+        :created_at
+    )";
+
+    $stmt = $this->db->prepare($sql);
+
+    return $stmt->execute([
+        ':name'        => $data['name'],
+        ':slug'        => createSlug($data['name']),
+        ':category_id' => $data['category_id'],
+        ':brand_id'    => $data['brand_id'],
+        ':price'       => $data['price'],
+        ':stock'       => $data['stock'],
+        ':description' => $data['description'],
+        ':created_at'  => $data['created_at']
+    ]);
+}
+
 }

@@ -1,0 +1,56 @@
+[2026-06-16 12:48:18] EXCEPTION : Class "OrderExport" not found
+File : C:\xampp\htdocs\smartcommerceapp\controllers\UserController.php
+Line : 181
+--------------------------------------------------------------------------------
+[2026-06-16 12:48:20] EXCEPTION : Class "OrderExport" not found
+File : C:\xampp\htdocs\smartcommerceapp\controllers\UserController.php
+Line : 181
+--------------------------------------------------------------------------------
+[2026-06-16 12:49:05] EXCEPTION : Cannot use object of type stdClass as array
+File : C:\xampp\htdocs\smartcommerceapp\exports\OrderExport.php
+Line : 36
+--------------------------------------------------------------------------------
+[2026-06-16 12:49:08] EXCEPTION : Cannot use object of type stdClass as array
+File : C:\xampp\htdocs\smartcommerceapp\exports\OrderExport.php
+Line : 36
+--------------------------------------------------------------------------------
+[2026-06-16 12:49:10] EXCEPTION : Cannot use object of type stdClass as array
+File : C:\xampp\htdocs\smartcommerceapp\exports\OrderExport.php
+Line : 36
+--------------------------------------------------------------------------------
+[2026-06-16 12:49:53] FATAL : Declaration of OrderExport::map($row) must be compatible with ImportExportInterface::map($row): array
+File : C:\xampp\htdocs\smartcommerceapp\exports\OrderExport.php
+Line : 33
+--------------------------------------------------------------------------------
+[2026-06-16 13:19:48] EXCEPTION : Class "exportProducts" not found
+File : C:\xampp\htdocs\smartcommerceapp\controllers\UserController.php
+Line : 192
+--------------------------------------------------------------------------------
+[2026-06-16 13:19:50] EXCEPTION : Class "exportProducts" not found
+File : C:\xampp\htdocs\smartcommerceapp\controllers\UserController.php
+Line : 192
+--------------------------------------------------------------------------------
+[2026-06-16 13:28:22] EXCEPTION : Interface "ImportInterface" not found
+File : C:\xampp\htdocs\smartcommerceapp\imports\ProductImport.php
+Line : 3
+--------------------------------------------------------------------------------
+[2026-06-16 13:31:00] EXCEPTION : Call to undefined method Product::create()
+File : C:\xampp\htdocs\smartcommerceapp\imports\ProductImport.php
+Line : 33
+--------------------------------------------------------------------------------
+[2026-06-16 13:31:04] EXCEPTION : Call to undefined method Product::create()
+File : C:\xampp\htdocs\smartcommerceapp\imports\ProductImport.php
+Line : 33
+--------------------------------------------------------------------------------
+[2026-06-16 13:32:19] EXCEPTION : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'slug'
+File : C:\xampp\htdocs\smartcommerceapp\models\Product.php
+Line : 139
+--------------------------------------------------------------------------------
+[2026-06-16 13:32:23] EXCEPTION : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'slug'
+File : C:\xampp\htdocs\smartcommerceapp\models\Product.php
+Line : 139
+--------------------------------------------------------------------------------
+[2026-06-16 13:33:14] EXCEPTION : SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'slug'
+File : C:\xampp\htdocs\smartcommerceapp\models\Product.php
+Line : 139
+--------------------------------------------------------------------------------

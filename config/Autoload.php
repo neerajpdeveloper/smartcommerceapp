@@ -9,6 +9,8 @@ spl_autoload_register(function ($class) {
         'controllers/',
         'services/',
         'core/',
+        'exports/',
+        'imports/',
     ];
 
     foreach ($paths as $path) {

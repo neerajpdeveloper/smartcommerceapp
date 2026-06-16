@@ -172,4 +172,56 @@ class UserController extends Controller
         'order' => $data
     ]);
 }
+
+public function exportOrders()
+{
+    $excel = new ExcelService();
+
+    $excel->export(
+        new OrderExport(
+            user()['id']
+        )
+    );
+} 
+
+public function exportProducts()
+{
+    $excel = new ExcelService();
+
+    $excel->export(new ProductsExport());
+} 
+
+
+public function importProducts()
+{
+    if (empty($_FILES['excel']['tmp_name'])) {
+        return;
+    }
+
+    $excel = new ExcelService();
+
+    $rows = $excel->import(
+        $_FILES['excel']['tmp_name']
+    );
+
+    $importer = new ProductImport();
+
+    $importer->import($rows);
+
+    $_SESSION['success'] = 'Products imported successfully';
+
+}
+
+
+public function exportPdfOrders()
+{
+    $pdf = new PdfService();
+
+    $pdf->export(
+        new OrderPdfExport(
+            user()['id']
+        )
+    );
+} 
+
 }

@@ -14,9 +14,35 @@ ORDER BY p.id DESC
 
 <div class="content-wrapper">
 
-<h3>Products</h3>
+<div class="card mb-3">
+    <div class="card-body d-flex justify-content-between align-items-center">
 
-<a href="create.php" class="btn btn-primary mb-3">+ Add Products</a>
+        <h5 class="mb-0">Products</h5>
+
+        <div class="d-flex gap-2">
+
+            <a href="export.php" class="btn btn-success">
+                <i class="fas fa-file-excel"></i>
+                Export
+            </a>
+
+            <button
+                class="btn btn-warning"
+                data-bs-toggle="modal"
+                data-bs-target="#importModal">
+                <i class="fas fa-upload"></i>
+                Import
+            </button>
+
+            <a href="create.php" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Add Product
+            </a>
+
+        </div>
+
+    </div>
+</div>
 <?php adminflashMessage(); ?>
 <table class="table table-bordered">
 <tr>

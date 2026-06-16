@@ -33,8 +33,46 @@
 
 <div class="container py-4">
 
-    <h3>My Orders</h3>
-    <p>Total Orders: <?= $totalOrders ?></p>
+<div class="d-flex justify-content-between align-items-center mb-3">
+
+    <div>
+        <h3>My Orders</h3>
+        <p class="mb-0">Total Orders: <?= $totalOrders ?></p>
+    </div>
+
+    <div class="d-flex gap-2">
+
+        <!-- Orders Export -->
+        <a href="<?= siteUrl() ?>/user/export-orders"
+           class="btn btn-success">
+            📊 Export Orders
+        </a>
+
+         <a href="<?= siteUrl() ?>/user/export-pdf-orders"
+           class="btn btn-success">
+            📊 Orders PDF
+        </a>
+
+        <!-- Product Export -->
+        <a href="<?= siteUrl() ?>/user/export-products"
+           class="btn btn-primary">
+            📦 Export Products
+        </a>
+
+<form action="import-products" method="POST" enctype="multipart/form-data">
+    
+    <input type="file" name="excel" required>
+
+    <button type="submit">
+        Import Products
+    </button>
+
+</form>
+
+    </div>
+
+</div>
+
 
     <?php if (!empty($order)): ?>
 

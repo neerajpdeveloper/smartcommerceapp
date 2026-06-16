@@ -128,6 +128,21 @@ class Router {
                         $obj->orderDetails($segments[2]);
                     break;
 
+                    case 'export-orders':
+                        $obj->exportOrders();
+                    break;
+
+                    case 'export-products':
+                        $obj->exportProducts();
+                    break;
+                    
+                    case 'import-products':
+                        $obj->importProducts();
+                    break;
+                     case 'export-pdf-orders':
+                        $obj->exportPdfOrders();
+                    break;
+
                     default:
                         $obj->dashboard();
                 }
